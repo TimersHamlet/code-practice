@@ -1,0 +1,10 @@
+div {
+  --default-color-1:yellow ;
+  --default-color-2:red;
+}
+.div2{
+    background-color: var(--default-color-1);
+}
+.div1{
+    background-color: var(--default-color-2);
+}
