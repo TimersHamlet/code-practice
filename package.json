@@ -1,0 +1,24 @@
+{
+  "name": "code-practice",
+  "version": "1.0.0",
+  "description": "This is a practiceCode repository",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "vconsole": "^3.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimersHamlet/code-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimersHamlet/code-practice/issues"
+  },
+  "homepage": "https://github.com/TimersHamlet/code-practice#readme"
+}
