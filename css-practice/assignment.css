@@ -8,3 +8,17 @@ div {
 .div1{
     background-color: var(--default-color-2);
 }
+.test-hover{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border-radius: 25px;
+}
+/* 使用hover伪类选择器不要有空格 */
+.test-hover:hover{
+  background-color: bisque;
+  /* 可以使用box-shadow来实现发光效果 
+  保证阴影颜色与背景颜色一样
+  */
+  box-shadow: 0 0 10px bisque
+}
