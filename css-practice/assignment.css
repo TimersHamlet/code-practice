@@ -22,3 +22,6 @@ div {
   */
   box-shadow: 0 0 10px bisque
 }
+#span-test{
+  widows: 20px;
+}
