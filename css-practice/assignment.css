@@ -1,47 +1,73 @@
 div {
-  --default-color-1:yellow ;
-  --default-color-2:red;
-  --favor-color-1:aquamarine;
-  --favor-color-2:bisque;
+  --default-color-1: yellow;
+  --default-color-2: red;
+  --favor-color-1: aquamarine;
+  --favor-color-2: bisque;
 }
-.div2{
-    background-color: var(--default-color-1);
+.div2 {
+  background-color: var(--default-color-1);
 }
-.div1{
-    background-color: var(--default-color-2);
+.div1 {
+  background-color: var(--default-color-2);
 }
-.test-hover{
+.test-hover {
   width: 100px;
   height: 100px;
   background-color: aquamarine;
   border-radius: 25px;
 }
 /* 使用hover伪类选择器不要有空格 */
-.test-hover:hover{
+.test-hover:hover {
   background-color: bisque;
   /* 可以使用box-shadow来实现发光效果 
   保证阴影颜色与背景颜色一样
   */
-  box-shadow: 0 0 10px bisque
+  box-shadow: 0 0 10px bisque;
 }
-#span-test{
+#span-test {
   widows: 20px;
 }
-.linear-gradient-test{
+.linear-gradient-test {
   display: block;
-  width:200px;
-  height:200px;
+  width: 200px;
+  height: 200px;
   /* 使用 to left或者to right控制水平方向 */
   /* 默认从上到下，第一个颜色是起始颜色，第二个颜色是终止颜色*/
   /* to top left这种来控制左上角渐变 */
   /* background: linear-gradient(to top left,var(--favor-color-1),var(--favor-color-2)) */
   /* 可以使用deg角度来控制渐变方向 */
-  background: linear-gradient(75deg,var(--favor-color-1),var(--favor-color-2))
+  background: linear-gradient(
+    75deg,
+    var(--favor-color-1),
+    var(--favor-color-2)
+  );
 }
-.radia-gradient-test{
-  display:block;
+.radia-gradient-test {
+  display: block;
   width: 200px;
-  height:200px;
+  height: 200px;
   /* 同上可以控制方向 */
-  background: radial-gradient(var(--favor-color-1),var(--favor-color-2))
+  background: radial-gradient(var(--favor-color-1), var(--favor-color-2));
+}
+.border-radius-test {
+  width: 300px;
+  height: 200px;
+  background-color: var(--favor-color-1);
+  /* border-radius 大于或者等于长或宽 */
+  /* border-bottom-left-radius: 400px; */
+  /* border-top-left-radius: 60px; */
+  /* 输入两个值可以画椭圆 */
+  border-radius: 300px 100px;
+}
+.transform-test{
+  width: 300px;
+  height:300px;
+  background-color: var(--favor-color-1);
+  border:1px solid black;
+  /* transform 平移 */
+  transform:translate(10px,15px)
+  /* transform 旋转 */
+  rotate(20deg);
+  /* 设置旋转原点 */
+  transform-origin: 0 100%;
 }
